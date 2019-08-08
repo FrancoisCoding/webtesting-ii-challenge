@@ -18,12 +18,22 @@ export default function Dashboard() {
       setStrikes(0);
     }
   };
+
+  const foulsIncrement = () => {
+    if (strikes === 0) {
+      setStrikes(1);
+    } else if (strikes === 1) {
+      setStrikes(2);
+    } else {
+      setStrikes(strikes);
+    }
+  };
   return (
     <div>
       <h1>Dashboard</h1>
       <button onClick={() => strikesIncrement()}>Strike</button>
       <button onClick={() => ballsIncrement()}>Ball</button>
-      <button>Foul</button>
+      <button onClick={() => foulsIncrement()}>Foul</button>
       <button>Hit</button>
       <Display
         balls={balls}
