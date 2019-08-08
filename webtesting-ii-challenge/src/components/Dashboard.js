@@ -11,10 +11,17 @@ export default function Dashboard() {
       setBalls(0);
     }
   };
+  const strikesIncrement = () => {
+    if (strikes < 3) {
+      setStrikes(strikes + 1);
+    } else {
+      setStrikes(0);
+    }
+  };
   return (
     <div>
       <h1>Dashboard</h1>
-      <button>Strike</button>
+      <button onClick={() => strikesIncrement()}>Strike</button>
       <button onClick={() => ballsIncrement()}>Ball</button>
       <button>Foul</button>
       <button>Hit</button>
