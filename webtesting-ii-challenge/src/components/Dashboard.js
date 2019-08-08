@@ -29,12 +29,13 @@ export default function Dashboard() {
     }
   };
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <button onClick={() => strikesIncrement()}>Strike</button>
-      <button onClick={() => ballsIncrement()}>Ball</button>
-      <button onClick={() => foulsIncrement()}>Foul</button>
-      <button>Hit</button>
+    <div className="dashboard">
+      <div>
+        <button onClick={() => strikesIncrement()}>Strike</button>
+        <button onClick={() => ballsIncrement()}>Ball</button>
+        <button onClick={() => foulsIncrement()}>Foul</button>
+        <button>Hit</button>
+      </div>
       <Display
         balls={balls}
         setBalls={setBalls}
