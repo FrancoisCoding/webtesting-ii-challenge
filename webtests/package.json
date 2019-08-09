@@ -1,10 +1,10 @@
 {
-  "name": "webtesting-ii-challenge",
+  "name": "webtests",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/dom": "^5.6.1",
     "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/react": "^8.0.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -29,5 +29,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0"
   }
 }
