@@ -1,11 +1,13 @@
 import React from "react";
 
-export default function Display(props) {
-  console.log(props.balls);
+function Display(props) {
   return (
-    <div className="display">
-      <p>Balls: {props.balls}</p>
-      <p>Strikes: {props.strikes}</p>
+    <div>
+      <h2>Display here!</h2>
+      <p data-testid="balls">Balls: {props.balls}</p>
+      <p data-testid="strikes">Strikes: {props.strikes}</p>
     </div>
   );
 }
+
+export default Display;
